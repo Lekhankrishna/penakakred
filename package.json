@@ -1,0 +1,29 @@
+{
+  "name": "penakakred-starter",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.47",
+    "framer-motion": "^12.23.22",
+    "lenis": "^1.3.11",
+    "lucide-react": "^0.545.0",
+    "next": "14.2.5",
+    "next-seo": "6.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.7"
+  }
+}

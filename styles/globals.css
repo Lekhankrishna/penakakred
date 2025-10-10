@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #0052CC;
+  --brand-azure: #007FFF;
+  --brand-gold: #FFD700;
+  --brand-slate: #1F2937;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-brandSlate;
+}
+
+
