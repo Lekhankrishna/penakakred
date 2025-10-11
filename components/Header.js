@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -17,28 +18,46 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/80 backdrop-blur-lg shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        {/* Logo area with animation */}
-        <Link href="/" className="group flex items-center gap-2" aria-label="PenakaKred Home">
+
+        {/* ✅ Logo section */}
+        <Link
+          href="/"
+          className="group flex items-center gap-2"
+          aria-label="PenakaKred Home"
+        >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
+            initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brandBlue to-brandAzure shadow-md"
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="relative flex items-center justify-center"
           >
-            {/* Animated logo glow */}
+            {/* 🖼️ Your logo image (place logo.png inside /public) */}
+            <Image
+              src="/team/logo.jpg"
+
+              alt="PenakaKred Logo"
+              width={40}
+              height={40}
+              className="rounded-lg transition-transform duration-300 group-hover:scale-110"
+              priority
+            />
+            {/* ✨ Subtle animated glow */}
             <motion.div
-              className="absolute inset-0 rounded-xl bg-gradient-to-br from-brandAzure/30 to-brandGold/30 blur-md"
-              animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.7, 0.5] }}
+              className="absolute inset-0 rounded-lg bg-gradient-to-br from-brandBlue/20 to-brandGold/20 blur-md -z-10"
+              animate={{
+                scale: [1, 1.1, 1],
+                opacity: [0.5, 0.8, 0.5],
+              }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
-            <span className="relative z-10 text-lg font-bold text-white">PK</span>
           </motion.div>
+
           <span className="text-lg font-semibold text-brandSlate group-hover:text-brandBlue transition-colors">
             PenakaKred
           </span>
         </Link>
 
-        {/* Navigation links */}
+        {/* ✅ Navigation */}
         <nav className="relative hidden gap-6 text-sm md:flex">
           {nav.map((item) => {
             const active = pathname === item.href;
@@ -61,7 +80,7 @@ export default function Header() {
           })}
         </nav>
 
-        {/* WhatsApp CTA */}
+        {/* ✅ WhatsApp Button */}
         <Link
           href="https://wa.me/917396667670"
           target="_blank"

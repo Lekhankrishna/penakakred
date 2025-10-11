@@ -1,4 +1,4 @@
-// File: E:\1_penakakred-starter\app\services\page.js
+// File: E:\penakakred\app\services\page.js
 import * as entry from '../../../../app/services/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
