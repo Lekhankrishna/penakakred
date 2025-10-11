@@ -7,7 +7,7 @@ export default function TeamSection() {
     {
       name: "Akarsh Chandrashekar",
       role: "Founder & CEO",
-      image: "/team/akarsh.jpg",
+      image: "/team/akarsh.jpg ",
       bio: "18+ years in banking, collections, and debt management across UAE & India. Visionary behind PenakaKred’s AI-driven compliance model.",
     },
     {
