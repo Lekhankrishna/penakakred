@@ -16,15 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/template.js"
     ],
-    "/services/page": [
+    "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/page.js"
-    ],
-    "/teams/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/teams/page.js"
+      "static/chunks/app/contact/page.js"
     ]
   }
 }

@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 export default function TeamSection() {
   const team = [
     {
       name: "Akarsh Chandrashekar",
       role: "Founder & CEO",
-      image: "/team/akarsh.jpg ",
+      image: "/team/akarsh.jpg",
       bio: "18+ years in banking, collections, and debt management across UAE & India. Visionary behind PenakaKred’s AI-driven compliance model.",
     },
     {
@@ -66,16 +65,12 @@ export default function TeamSection() {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition" />
-
-            
-
             <div className="p-6 text-center">
               <h3 className="text-lg font-medium text-brandSlate">{member.name}</h3>
               <p className="text-sm text-brandBlue">{member.role}</p>
               <p className="mt-3 text-sm text-slate-600">{member.bio}</p>
             </div>
           </motion.div>
-          
         ))}
       </div>
     </section>
