@@ -1,1 +1,6 @@
+git add components/Header.js app/layout.js .gitignore
+# Next.js build output
+.next
 node_modules
+.env
+.DS_Store
